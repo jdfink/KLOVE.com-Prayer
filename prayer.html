@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Prayer</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!-- My custom CSS which should be SASS but too bad for now -->
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/jon.css">
+
+        <!-- Font Awesome -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Font Awesome 5 -->
+        <link href="https://use.fontawesome.com/releases/v5.0.0/css/all.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white hard-shadow sticky-top">
+            <a class="navbar-brand" href="#"><img src="img/logo-klove-cyan.png" height="25" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <small><p class="mb-0 ripple">MENU</p></small>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+                <small>
+                    <ul class="navbar-nav">
+                        <li class="nav-item ml-2">
+                            <a class="nav-link ripple-2" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link ripple-2" href="#">MUSIC</a>
+                        </li>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link ripple-2" href="#">MINISTRY</a>
+                        </li>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link ripple-2" href="#">DJS</a>
+                        </li>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link ripple-2" href="#">CONTESTS</a>
+                        </li>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link ripple-2" href="#">EVENTS</a>
+                        </li>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link ripple-2" href="#">NEWS</a>
+                        </li>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link ripple-2" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link rounded bg-white border ripple-2 mx-2" href="#">SIGN IN / REGISTER</a>
+                        </li>
+                        <li class="nav-item ml-2">
+                            <a class="nav-link rounded bg-cyan text-white ripple" href="#">DONATE</a>
+                        </li>
+                    </ul>
+                </small>
+
+            </div>
+        </nav>
+
+        <!-- 2ND NAVBAR -->
+
+        <!--
+<div class="navbar secondary-nav p-3 sticky-top">
+<div class="row no-gutters">
+<div class="listen-now">
+<button class="btn btn-primary text-cyan play-now"><i class="fas fa-play"></i> &nbsp;Play Now</button>
+</div>
+<div class="pr-3 ml-4 now-playing">
+<div class="album-art mr-2">
+<img class="rounded" src="img/I-just-need-U-TobyMac.jpg">
+</div>
+<div class="text v-align-middle">
+<p class="song-title m-0">I just need u.</p>
+<p class="artist-name mt-1 mb-0"><span>by </span>TobyMac</p>
+</div>
+</div>
+<div class="col-sm  col-md-3 col-lg-5 text-sm-right text-md-left recently-played ml-4">
+<button class="btn btn-light text-cyan d-none d-sm-inline-block"><i class=" fas fa-music"> &nbsp;</i>Recently Played</button>
+<button class="btn btn-light text-cyan d-none d-lg-inline-block ml-3"><i class="fas fa-map-marker"></i> &nbsp;Listen at 99.5 FM</button>
+</div>
+<div class="col ml-3 d-none d-md-block search">
+<input class="rounded" type="text" placeholder="Search K-LOVE or Keyword...">
+</div>
+</div>
+</div>
+-->
+
+
+
+        <!-- CONTENT BEGIN -->
+        <div class="mb-5" style="background-image: url('img/votd-image-template.png'); height: 200px; background-size: cover; background-position: center;">
+        </div>
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-12 negmar-2">
+                    <div class="bg-white p-4 p-md-5">
+                        <h1 class="text-center display-3 text-grad">Prayer</h1>
+                        <p class="text-center text-muted mb-0 subhead">Life is difficult at times and we all need prayer. At K-LOVE, we take your request very seriously and we will be praying for you.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 mb-5"></div>
+        </div>
+        <div class="container-fluid bg-light">
+            <div class="row justify-content-center" style="position: relative;">
+                <div class="col-12 mb-5"></div>
+                <div class="col-xl-7 p-5">
+                    <h3 class="text-center pb-5">Submit A Prayer Request</h3>
+                    <form class="needs-validation" novalidate>
+                        <div class="form-row justify-content-center">
+                            <div class="form-group col-md-5">
+                                <label for="first-name">First Name</label>
+                                <input type="text" class="form-control" id="first-name" required>
+                                <div class="invalid-feedback">This field is required!</div>
+                            </div>
+                            <div class="form-group col-md-5">
+                                <label for="last-name">Last Name <span class="text-muted">(optional)</span></label>
+                                <input type="text" class="form-control" id="last-name">
+                            </div>
+                            <div class="form-group col-md-10">
+                                <label for="phone-number">Phone <span class="text-muted">(optional)</span></label>
+                                <input type="num" class="form-control" id="phone-number">
+                            </div>
+                            <div class="form-group col-md-10">
+                                <label for="email-address">Email <span class="text-muted">(optional)</span></label>
+                                <input type="email" class="form-control" id="email-address">
+                                <div class="invalid-feedback">Please enter a valid email address.</div>
+                            </div>
+                            <div class="form-group col-md-5">
+                                <div class="form-check v-align-middle">
+                                    <input class="form-check-input" type="checkbox" id="military-first-responder" aria-describedby="MilitaryFirstResponderHelpBlock">
+                                    <label for="military-first-responder">
+                                        This is a prayer for Military or First Responders
+                                        <small class="form-text text-muted" id="MilitaryFirstResponderHelpBlock">Military and First Responders prayers are only shared with K-LOVE Pastors and staff.</small>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-5">
+                                <label for="military-first-responder-category">Branch of Service</label>
+                                <select class="form-control" id="military-first-responder-category" disabled>
+                                    <option selected>Choose...</option>
+                                    <option>Air Force</option>
+                                    <option>Army</option>
+                                    <option>Coast Guard</option>
+                                    <option>EMT/Medic</option>
+                                    <option>Fire</option>
+                                    <option>Marines</option>
+                                    <option>Navy</option>
+                                    <option>Police</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-10">
+                                <label for="category">Category</label>
+                                <select class="form-control" id="category" required>
+                                    <option selected>Choose...</option>
+                                    <option>Addictive Behavior</option>
+                                    <option>Career/Job</option>
+                                    <option>Comfort/Grief</option>
+                                    <option>Depression/Anxiety/Suicidal Ideations</option>
+                                    <option>Family Issues</option>
+                                    <option>Finances</option>
+                                    <option>God's Will</option>
+                                    <option>Healing</option>
+                                    <option>Marriage/Relationship Problems</option>
+                                    <option>Praise Report</option>
+                                    <option>Salvation/Rededication</option>
+                                    <option>Spiritual Growth</option>
+                                </select>
+                                <div class="invalid-feedback">This field is required!</div>
+                            </div>
+                            <div class="form-group col-md-5">
+                                <div class="border p-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="prayer-type" id="public-prayer" aria-describedby="PublicPrayerHelpBlock" checked>
+                                        <label class="form-check-label" for="public-prayer">
+                                            This is a public prayer request
+                                            <small class="form-text text-muted" id="PublicPrayerHelpBlock">Your prayer request will be shared with fellow listeners who will lift you up in prayer.</small>
+                                        </label>    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-5">
+                                <div class="border p-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="prayer-type" id="private-prayer" aria-describedby="PrivatePrayerHelpBlock">
+                                        <label class="form-check-label" for="private-prayer">
+                                            This is a private prayer request
+                                            <small class="form-text text-muted" id="PrivatePrayerHelpBlock">Your prayer request is private and will only be shared with the K-LOVE Pastors and staff.</small>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group mb-5 col-md-10">
+                                <label for="prayer-request">Prayer Request</label>
+                                <textarea class="form-control" rows="5" id="prayer-request" required></textarea>
+                                <div class="invalid-feedback">This field is required!</div>
+                            </div>
+                            <div class="col-10 text-center">
+                                <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                                <p class="text-muted d-block pt-3">You can also call our prayer line at 800-525-5683.</p>
+                            </div>
+                        </div>
+                    </form>
+                    
+                    <script>
+                    // Example starter JavaScript for disabling form submissions if there are invalid fields
+                    (function() {
+                      'use strict';
+                      window.addEventListener('load', function() {
+                        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                        var forms = document.getElementsByClassName('needs-validation');
+                        // Loop over them and prevent submission
+                        var validation = Array.prototype.filter.call(forms, function(form) {
+                          form.addEventListener('submit', function(event) {
+                            if (form.checkValidity() === false) {
+                              event.preventDefault();
+                              event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                          }, false);
+                        });
+                          
+                        var military_first_responder = function () {
+                            if ($("#military-first-responder").is(":checked")) {
+                                $('#military-first-responder-category').prop('disabled', false);
+                                $('label[for="military-first-responder-category"]').removeClass('text-muted', false);
+                                $('#public-prayer').prop('disabled', 'disabled');
+                                $('#private-prayer').prop('checked', 'checked');
+                            }
+                            else {
+                                $('#military-first-responder-category').prop('disabled', 'disabled');
+                                $('label[for="military-first-responder-category"]').addClass('text-muted', true);
+                                $('#public-prayer').prop('disabled', false).prop('checked', 'checked');
+                                $('#private-prayer').prop('checked', false);
+                            }
+                        };
+                        $(military_first_responder);
+                        $("#military-first-responder").change(military_first_responder);
+
+                      }, false);
+                    })();
+                    </script>       
+                    
+                </div>
+                <div class="col-12 mb-5"></div>
+            </div>
+
+        </div>
+
+
+
+        <!-- Pray For Others -->
+        <div class="container">
+            <div class="row py-5 justify-content-center">
+                <div class="col-12 mb-5"></div>
+                <div class="col-md-5">
+                    <div class="v-align-middle">
+                        <h3 class="display-4 text-cyan mb-3">Pray for Others</h3>
+                        <p class="mb-2">The Bible says "make the most of every opportunity". If you would like to be a part of an incredible opportunity to pray for others, sign up today!</p>
+                        <p class="text-muted mb-4">"The earnest prayer of a righteous person has great power and wonderful results." James 5:16b NLT</p>
+                        <button class="btn btn-primary btn-block">Pray for Others</button>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <img class="rounded shadow w-100" src="img/prayer-image-560x435.jpg">
+                </div>
+                <div class="col-12 mb-5"></div>
+            </div>
+
+
+        <!-- FOOTER -->
+        <div class="full-width bg-kllight">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-3">
+                        <p class="my-4"><img class="" src="img/logo-klove-cyan.png" height="25" alt=""></p>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <ul class="list-inline my-4 float-right">
+                            <li class="list-inline-item"><p class="text-dark mb-0 ml-4"><i class="fab fa-facebook-f mr-2 color-facebook"></i>Facebook</p></li>
+                            <li class="list-inline-item"><p class="text-dark mb-0 ml-4"><i class="fab fa-twitter mr-2 text-cyan"></i>Twitter</p></li>
+                            <li class="list-inline-item"><p class="text-dark mb-0 ml-4"><i class="fab fa-instagram mr-2 text-magenta"></i>Instagram</p></li>
+                            <li class="list-inline-item"><p class="text-dark mb-0 ml-4"><i class="fab fa-youtube mr-2 color-youtube"></i>YouTube</p></li>
+                            <li class="list-inline-item"><p class="text-dark mb-0 ml-4"><i class="fab fa-pinterest mr-2 color-pinterest"></i>Pinterest</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col"><hr class="m-0"></div>
+                </div>
+
+                <div class="row justify-content-center py-4">
+                    <div class="col-5 col-md-3">
+                        <ul class="list-unstyled">
+                            <li><p class="font-weight-bold text-muted pt-3 mb-2 ">POPULAR LINKS</p></li>
+                            <small>
+                                <li><a href="#" class="text-dark">Stream K-LOVE Online</a></li>
+                                <li><a href="#" class="text-dark">DJs and Shows</a></li>
+                                <li><a href="#" class="text-dark">Verse of the Day</a></li>
+                                <li><a href="#" class="text-dark">Prayer</a></li>
+                                <li><a href="#" class="text-dark">Events</a></li>
+                                <li><a href="#" class="text-dark">Contests</a></li>
+                            </small>
+                        </ul>
+                    </div>
+
+                    <div class="col-5 col-md-3">
+                        <ul class="list-unstyled">
+                            <li><p class="font-weight-bold text-muted pt-3 mb-2">HELP</p></li>
+                            <small>
+                                <li><a href="#" class="text-dark">FAQs</a></li>
+                                <li><a href="#" class="text-dark">My Account</a></li>
+                                <li><a href="#" class="text-dark">Contact Us</a></li>
+                                <li><a href="#" class="text-dark">Privacy Policy</a></li>
+                                <li><a href="#" class="text-dark">Terms of Use</a></li>
+                            </small>
+                        </ul>
+                    </div>
+
+                    <div class="col-5 col-md-3">
+                        <ul class="list-unstyled">
+                            <li><p class="font-weight-bold text-muted pt-3 mb-2">MINISTRY</p></li>
+                            <small>
+                                <li><a href="#" class="text-dark">Submit a Prayer</a></li>
+                                <li><a href="#" class="text-dark">Verse of the Day</a></li>
+                                <li><a href="#" class="text-dark">Seek Advice</a></li>
+                                <li><a href="#" class="text-dark">Pastors</a></li>
+                            </small>
+                        </ul>
+                    </div>
+
+                    <div class="col-5 col-md-3">
+                        <ul class="list-unstyled">
+                            <li><p class="font-weight-bold text-muted pt-3 mb-2">ABOUT US</p></li>
+                            <small>
+                                <li><a href="#" class="text-dark">Mission</a></li>
+                                <li><a href="#" class="text-dark">Jobs</a></li>
+                                <li><a href="#" class="text-dark">Finances</a></li>
+                                <li><a href="#" class="text-dark">Leadership and Key Staff</a></li>
+                                <li><a href="#" class="text-dark">Audited Financials</a></li>
+                                <li><a href="#" class="text-dark">Form 990</a></li>
+                            </small>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12"><hr class="m-0"></div>
+                    <div class="col my-4">
+                        <small><p class="text-center text-muted mb-0">© 2018 Educational Media Foundation, All rights reserved.</p></small>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

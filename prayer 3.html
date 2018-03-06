@@ -102,11 +102,11 @@
 
 
         <!-- CONTENT BEGIN -->
-        <div class="mb-5" style="background-image: url('img/prayer-bg.jpg'); height: 200px; background-size: cover; background-position: top center;"></div>
+        <div class="mb-5" style="background:url('img/prayer-bg.jpg') top center no-repeat; background-size: cover; height: 650px;"></div>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-12 negmar-2">
-                    <div class="bg-white p-4 p-md-5">
+                <div class="col-12 nm-1">
+                    <div class="bg-white p-4 p-md-5 rounded">
                         <h1 class="text-center display-3 text-grad">Prayer</h1>
                         <p class="text-center text-muted mb-0 subhead">Life is difficult at times and we all need prayer. At K-LOVE, we take your request very seriously and we will be praying for you.</p>
                     </div>
@@ -114,38 +114,118 @@
             </div>
             <div class="col-12 mb-5"></div>
         </div>
-        <div class="container-fluid bg-kllight">
-            <div class="container p-5">
+        <div class="container-fluid bg-kllight py-5">
+            <div class="mb-5"></div>
+            <div class="container">
                 <div class="row justify-content-center" style="position: relative;">
-                    <div class="col-12 mb-3 mb-md-5"></div>
-                    <div class="col-md-6 mb-5 mb-md-0">
-                        <div class="card diffuse">
-                            <div class="card-body text-center py-5">
-                                <h3><i class="fas fa-book d-block text-cyan display-4 mb-2"></i>Request Prayer</h3>
-                                <p class="text-muted mb-3">Let K-LOVE Pastors, staff and listeners lift you up in prayer!</p>
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#submit-a-prayer">
-                                    Submit Your Prayer
-                                </button>
-                            </div> 
-                        </div>
+                    <div class="col-md-10 mb-5 mb-md-0 rounded shadow bg-white p-5">
+                        <h3 class="mb-5">Submit a Prayer <a href="#" class="btn btn-warning display-5 float-right"> Pray For Others</a></h3>
+                        <form class="needs-validation" novalidate>
+                            <div class="form-row justify-content-center">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="form-group mb-3 col-md-6">
+                                            <label for="your-name" class="small text-muted text-uppercase font-weight-bold">Your Name <span class="text-lowercase text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="your-name" required>
+                                            <div class="invalid-feedback">This field is required!</div>
+                                        </div>
+                                        <div class="form-group mb-3 col-md-6">
+                                            <label for="email-address" class="small text-muted text-uppercase font-weight-bold">Email</label>
+                                            <input type="num" class="form-control" id="email-address">
+                                        </div>
+                                        <div class="form-group mb-3 col-md-6">
+                                            <label for="phone-number" class="small text-muted text-uppercase font-weight-bold">Phone</label>
+                                            <input type="num" class="form-control" id="phone-number">
+                                        </div>
+                                        <div class="col-md-6 form-group">
+                                            <label for="category" class="small text-muted text-uppercase font-weight-bold">Category</label>
+                                            <select class="form-control" id="category" required>
+                                                <option selected>Choose...</option>
+                                                <option>Addictive Behavior</option>
+                                                <option>Career/Job</option>
+                                                <option>Comfort/Grief</option>
+                                                <option>Depression/Anxiety/Suicidal Ideations</option>
+                                                <option>Family Issues</option>
+                                                <option>Finances</option>
+                                                <option>God's Will</option>
+                                                <option>Healing</option>
+                                                <option>Marriage/Relationship Problems</option>
+                                                <option>Praise Report</option>
+                                                <option>Salvation/Rededication</option>
+                                                <option>Spiritual Growth</option>
+                                            </select>
+                                            <div class="invalid-feedback">This field is required!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 pl-2">
+                                    <div class="row">
+                                        <div class="col-md-12 form-group mb-4">
+                                            <label for="prayer-request" class="small text-muted text-uppercase font-weight-bold">Prayer Request <span class="text-danger">*</span></label>
+                                            <textarea class="form-control" rows="5" id="prayer-request" required></textarea>
+                                            <div class="invalid-feedback">This field is required!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <div class="form-check v-align-middle">
+                                        <input class="form-check-input" type="checkbox" id="military-first-responder" aria-describedby="MilitaryFirstResponderHelpBlock">
+                                        <label for="military-first-responder">
+                                            This is a prayer for Military or First Responders
+                                            <small class="form-text text-muted" id="MilitaryFirstResponderHelpBlock">Military and First Responders prayers are only shared with K-LOVE Pastors and staff.</small>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <label for="military-first-responder-category">Branch of Service</label>
+                                    <select class="form-control" id="military-first-responder-category" disabled>
+                                        <option selected>Choose...</option>
+                                        <option>Air Force</option>
+                                        <option>Army</option>
+                                        <option>Coast Guard</option>
+                                        <option>EMT/Medic</option>
+                                        <option>Fire Fighters</option>
+                                        <option>Marines Corps.</option>
+                                        <option>Navy</option>
+                                        <option>Police</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <div class="p-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="prayer-type" id="public-prayer" aria-describedby="PublicPrayerHelpBlock" checked>
+                                            <label class="form-check-label" for="public-prayer">
+                                                This is a public prayer request
+                                                <small class="form-text text-muted" id="PublicPrayerHelpBlock">Your prayer request will be shared with fellow listeners who will lift you up in prayer.</small>
+                                            </label>    
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <div class="p-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="prayer-type" id="private-prayer" aria-describedby="PrivatePrayerHelpBlock">
+                                            <label class="form-check-label" for="private-prayer">
+                                                This is a private prayer request
+                                                <small class="form-text text-muted" id="PrivatePrayerHelpBlock">Your prayer request is private and will only be shared with the K-LOVE Pastors and staff.</small>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                                    <p class="text-muted d-block pt-3">You can also call our prayer line at 800-525-5683.</p>
+                                    <button type="reset" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
-                    <div class="col-md-6">
-                        <div class="card diffuse">
-                            <div class="card-body text-center py-5">
-                                <h3><i class="far fa-users d-block text-cyan display-4 mb-2"></i>Pray For Others</h3>
-                                <p class="text-muted mb-3">Pray for fellow K-LOVE Listeners.</p>
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pray-for-others">
-                                    Pray for Others
-                                </button>
-                            </div> 
-                        </div>
-                    </div>
-                    <div class="col-12 mb-3 mb-md-5"></div>
                 </div>
             </div>
+            <div class="mt-5"></div>
         </div>
         <!-- Talk With A Pastor -->
-        <div class="container">
+        <div class="container bg-white">
             <div class="row p-5 px-lg-0 justify-content-center">
                 <div class="col-12 mb-5"></div>
                 <div class="col-lg-5 pr-lg-4">
@@ -260,110 +340,6 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
-                <div class="container-fluid p-0">
-                    <div class="row justify-content-center" style="position: relative;">
-                        <div class="col">
-                            <form class="needs-validation" novalidate>
-                                <div class="form-row justify-content-center">
-                                    <div class="form-group col-md-6">
-                                        <label for="first-name">First Name</label>
-                                        <input type="text" class="form-control" id="first-name" required>
-                                        <div class="invalid-feedback">This field is required!</div>
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <label for="last-name">Last Name <small class="text-muted">(optional)</small></label>
-                                        <input type="text" class="form-control" id="last-name">
-                                    </div>
-                                    <div class="col-md-4 form-group">
-                                        <label for="phone-number">Phone <small class="text-muted">(optional)</small></label>
-                                        <input type="num" class="form-control" id="phone-number">
-                                    </div>
-                                    <div class="col-md-8 form-group">
-                                        <label for="email-address">Email <small class="text-muted">(optional)</small></label>
-                                        <input type="email" class="form-control" id="email-address">
-                                        <div class="invalid-feedback">Please enter a valid email address.</div>
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <div class="form-check v-align-middle">
-                                            <input class="form-check-input" type="checkbox" id="military-first-responder" aria-describedby="MilitaryFirstResponderHelpBlock">
-                                            <label for="military-first-responder">
-                                                This is a prayer for Military or First Responders
-                                                <small class="form-text text-muted" id="MilitaryFirstResponderHelpBlock">Military and First Responders prayers are only shared with K-LOVE Pastors and staff.</small>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <label for="military-first-responder-category">Branch of Service</label>
-                                        <select class="form-control" id="military-first-responder-category" disabled>
-                                            <option selected>Choose...</option>
-                                            <option>Air Force</option>
-                                            <option>Army</option>
-                                            <option>Coast Guard</option>
-                                            <option>EMT/Medic</option>
-                                            <option>Fire Fighters</option>
-                                            <option>Marines Corps.</option>
-                                            <option>Navy</option>
-                                            <option>Police</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-md-12 form-group">
-                                        <label for="category">Category</label>
-                                        <select class="form-control" id="category" required>
-                                            <option selected>Choose...</option>
-                                            <option>Addictive Behavior</option>
-                                            <option>Career/Job</option>
-                                            <option>Comfort/Grief</option>
-                                            <option>Depression/Anxiety/Suicidal Ideations</option>
-                                            <option>Family Issues</option>
-                                            <option>Finances</option>
-                                            <option>God's Will</option>
-                                            <option>Healing</option>
-                                            <option>Marriage/Relationship Problems</option>
-                                            <option>Praise Report</option>
-                                            <option>Salvation/Rededication</option>
-                                            <option>Spiritual Growth</option>
-                                        </select>
-                                        <div class="invalid-feedback">This field is required!</div>
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <div class="border p-3">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="prayer-type" id="public-prayer" aria-describedby="PublicPrayerHelpBlock" checked>
-                                                <label class="form-check-label" for="public-prayer">
-                                                    This is a public prayer request
-                                                    <small class="form-text text-muted" id="PublicPrayerHelpBlock">Your prayer request will be shared with fellow listeners who will lift you up in prayer.</small>
-                                                </label>    
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <div class="border p-3">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="radio" name="prayer-type" id="private-prayer" aria-describedby="PrivatePrayerHelpBlock">
-                                                <label class="form-check-label" for="private-prayer">
-                                                    This is a private prayer request
-                                                    <small class="form-text text-muted" id="PrivatePrayerHelpBlock">Your prayer request is private and will only be shared with the K-LOVE Pastors and staff.</small>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 form-group mb-4">
-                                        <label for="prayer-request">Prayer Request</label>
-                                        <textarea class="form-control" rows="5" id="prayer-request" required></textarea>
-                                        <div class="invalid-feedback">This field is required!</div>
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        <button type="submit" class="btn btn-primary btn-block">Submit</button>
-                                        <p class="text-muted d-block pt-3">You can also call our prayer line at 800-525-5683.</p>
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                                    </div>
-                                </div>
-                            </form>     
-                        </div>
-                    </div>
-                  </div>
-              </div>
             </div>
           </div>
         </div>
@@ -416,8 +392,7 @@
           </div>
         </div>
         <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-            <script>
+         <script>
                 // Example starter JavaScript for disabling form submissions if there are invalid fields
                 (function() {
                   'use strict';
@@ -456,7 +431,7 @@
 
                   }, false);
                 })();
-            </script>           
+            </script>
             
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
